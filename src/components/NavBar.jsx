@@ -13,6 +13,7 @@ import Checkout from './Checkout'
 import BookingConfirmation from './BookingConfirmation'
 import MovieCard from './MovieCard'
 import PrivateRoute from './PrivateRoute'
+import Wishlist from './Wishlist'
 
 export const Container = React.createContext()
 
@@ -51,6 +52,10 @@ function Navbar() {
             <input type="text" placeholder='Search whatever you want' onChange={(e) => setInputValue(e.target.value)} />
             <Icons.Search fontSize={20} color='black' id='search' />
 
+            <NavLink to='wishlist' style={({ isActive }) => { return { color: isActive ? 'red' : '#fff' } }}>
+            <span id={toogle ? 'Movies' : 'MoviesLight'}><Icons.HeartFill fontSize={24} id='wishlist' /></span>
+            </NavLink>
+
             <NavLink to='/signup' style={({ isActive }) => { return { color: isActive ? '#fff' : '#EE9B00' } }}>
               <span id={toogle ? 'Movies' : 'MoviesLight'} style={{ fontSize: '20px', fontFamily: 'fantasy' }}><Icons.PersonFill style={{ border: '2px solid white', borderRadius: '50%', }} size={24} />&nbsp;&nbsp;signup</span>
             </NavLink>
@@ -74,6 +79,7 @@ function Navbar() {
             <Route exact path="/checkout" element={<Checkout />} />
             <Route exact path="/bookingconfirmation" element={<BookingConfirmation />} />
             <Route exact path="/moviecard" element={<MovieCard />} />
+            <Route exact path="/wishlist" element={<Wishlist />} />
           </Routes>
         </div>
       </Fragment>

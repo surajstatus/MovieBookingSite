@@ -71,10 +71,10 @@ function Movies() {
               </Fragment>
             )
           })}
-          {trailer ? console.log : <TrailerMovie moviesTitle={movieTitle} trailercloseHandler={movieCardCloseHandler} />}
-          <button style={{cursor:'pointer', borderRadius: '10px', backgroundColor:'transparent'}}  id={trailer ? 'Nothing' : 'Exit1'} className={toogle ? 'DarkTheme' : 'LightThemeClose'} onClick={() => setTrailer(true)}><Icons.XLg size={35} color='#fff' cursor={'pointer'}  /></button>
+          <button style={{cursor:'pointer', borderRadius: '10px', backgroundColor:'transparent', position:'fixed'}}  id={trailer ? 'Nothing' : 'Exit1'} className={toogle ? 'DarkTheme' : 'LightThemeClose'} onClick={() => setTrailer(true)}><Icons.XLg size={35} color='#fff' cursor={'pointer'}  /></button>
         </div>
 
+        {trailer ? console.log : <TrailerMovie moviesTitle={movieTitle} trailercloseHandler={movieCardCloseHandler} />}
         {/* moviecard  */}
 
         <div className="movieCard-popUp" style={{

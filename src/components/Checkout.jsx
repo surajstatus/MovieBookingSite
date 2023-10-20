@@ -5,7 +5,7 @@ import '../Styles/Checkout.css';
 
 const Checkout = () => {
 
-    const bookingData = JSON.parse(localStorage.getItem('bookingDataValue'))
+    const bookingData = JSON.parse(localStorage.getItem('bookingDataValue'));
     const movieSelected = JSON.parse(localStorage.getItem('currentMovieBooking'));
     const moviePrice = JSON.parse(localStorage.getItem('moviePrice'));
     const convenienceFee = bookingData.seat.length * moviePrice * 1.75 / 100;

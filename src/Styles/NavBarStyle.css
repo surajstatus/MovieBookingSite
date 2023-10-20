@@ -121,7 +121,6 @@ span #HomeLight:hover,
     height: 4vh;
     border-radius: 16px;
     border: none;
-    margin-right: 30px;
 }
 
 .input-group input[type='text'] {
@@ -140,7 +139,7 @@ span #HomeLight:hover,
 
 #search {
     position: absolute;
-    margin-left: 310px;
+    margin-left: 300px;
 }
 
 .movieCard-popUp {
@@ -150,4 +149,8 @@ span #HomeLight:hover,
     left: 0;
     right: 0;
     background: rgba(21, 21, 21, 0.571);
+}
+
+#wishlist {
+    /* border: 2px solid white;     */
 }

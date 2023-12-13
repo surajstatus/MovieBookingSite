@@ -26,7 +26,7 @@ function Movies() {
   const MovieCall = async () => {
     const data = await axios.get(Api, {
       params: {
-        api_key: 'd670aceac6634d294ff37bc3eae504c1',
+        api_key: '1dcd25aed0c22d2e60da27a5257c935c',
         query: input
       }
     })

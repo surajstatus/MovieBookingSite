@@ -66,6 +66,7 @@ function Navbar() {
             </div>
           </div>
         </nav>
+        
         <div className='responsive-scene'>
           <Routes>
             <Route path='' element={<Movies />}></Route>
